@@ -84,7 +84,7 @@
 	<distributionManagement>
           <snapshotRepository>
           <id>nexus</id>
-          <url>http://ec2-13-127-243-89.ap-south-1.compute.amazonaws.com:8081/nexus/content/repositories/parking_backend-SNAPSHOT/</url>
+          <url>http://http://3.14.245.210:8081/nexus/content/repositories/snapshots/</url>
           </snapshotRepository>
        </distributionManagement>
 
