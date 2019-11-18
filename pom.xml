@@ -14,10 +14,11 @@
 	<version>0.0.1-SNAPSHOT</version>
 	<name>parking</name>
 	<description>Demo project for Spring Boot</description>
-	<sonar.host.url>http://13.58.195.203:9000</sonar.host.url>
+	
 
 	<properties>
 		<java.version>1.8</java.version>
+		<sonar.host.url>http://13.58.195.203:9000</sonar.host.url>
 	</properties>
 
 	<dependencies>
