@@ -88,7 +88,6 @@
 <distributionManagement>
     <snapshotRepository>
         <id>snapshots</id>
-        <name>ip-172-31-31-51.us-east-2.compute.internal-snapshots</name>
         <url>http://13.58.195.203:8081/artifactory/libs-snapshot</url>
     </snapshotRepository>
 </distributionManagement>
