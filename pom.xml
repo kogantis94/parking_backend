@@ -14,6 +14,7 @@
 	<version>0.0.1-SNAPSHOT</version>
 	<name>parking</name>
 	<description>Demo project for Spring Boot</description>
+	<sonar.host.url>http://13.58.195.203:9000</sonar.host.url>
 
 	<properties>
 		<java.version>1.8</java.version>
@@ -54,11 +55,13 @@
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
-		<dependency>
-			<groupId>org.codehaus.mojo</groupId>
-			<artifactId>sonar-maven-plugin</artifactId>
-			<version>3.6.0.1398</version>
-		</dependency>
+		<!-- https://mvnrepository.com/artifact/org.sonarsource.scanner.maven/sonar-maven-plugin -->
+<dependency>
+    <groupId>org.sonarsource.scanner.maven</groupId>
+    <artifactId>sonar-maven-plugin</artifactId>
+    <version>3.7.0.1746</version>
+</dependency>
+
 		<dependency>
 			<groupId>io.springfox</groupId>
 			<artifactId>springfox-swagger-ui</artifactId>
@@ -81,12 +84,13 @@
                 </dependency>
                 </dependencies>
 	
-	<distributionManagement>
-          <snapshotRepository>
-          <id>nexus</id>
-          <url>http://3.14.245.210:8081/nexus/content/repositories/snapshots/</url>
-          </snapshotRepository>
-       </distributionManagement>
+<distributionManagement>
+    <snapshotRepository>
+        <id>snapshots</id>
+        <name>ip-172-31-31-51.us-east-2.compute.internal-snapshots</name>
+        <url>http://13.58.195.203:8081/artifactory/libs-snapshot</url>
+    </snapshotRepository>
+</distributionManagement>
 
 	<build>
 		<plugins>
