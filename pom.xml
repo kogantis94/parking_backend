@@ -18,7 +18,7 @@
 
 	<properties>
 		<java.version>1.8</java.version>
-		<sonar.host.url>http://13.58.195.203:9000</sonar.host.url>
+		<sonar.host.url>http://52.15.187.197:9000/</sonar.host.url>
 	</properties>
 
 	<dependencies>
@@ -91,12 +91,12 @@
                         <version>3.7.0.1746</version>
                 </dependency>
                 </dependencies>
-	
-<distributionManagement>
-    <snapshotRepository>
-        <id>artifactory</id>
-        <url>http://13.58.195.203:8081/artifactory/libs-snapshot</url>
-    </snapshotRepository>
+
+        <distributionManagement>
+  <snapshotRepository>
+    <id>nexus</id>
+    <url>http://13.58.94.252:8081/repository/maven-snapshots/</url>
+  </snapshotRepository>
 </distributionManagement>
 
 	<build>
